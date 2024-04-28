@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html style="overflow-y: auto;" class="dark is-overlay" id="html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@600&family=Tajawal:wght@900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/0476eb8338.js" crossorigin="anonymous"></script>
+    
+    <title>blog</title>
+    <style>
+
+        html {
+            background-color: #000000;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #000000;
+        }
+
+        .topics-container {
+            padding: 20px;
+        }
+
+        .topic {
+            width: 95%;
+            height: 15%;
+            margin: 0 auto 20px;
+            padding: 20px;
+            color: #fff;
+            background-color: #181616;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            text-align: center;
+            border-radius: 3%;
+            font-size: 2.5vh;
+        }
+
+        .topic:hover {
+            background-color: #221e1e;
+        }
+
+
+        .frame {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150%;
+            background-color: #000000; 
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            overflow-y: scroll;
+        }
+
+        .noscroll {
+          overflow: hidden;
+        }
+        .frame-content {
+            padding: 10px;
+            text-align: center;
+            padding-bottom: 90px;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+      
+        @media (max-width: 767px) {
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+                width: 300;
+                height: 350;
+            }
+        }
+        .image-container {
+            width: 100%;
+            height: 100vh;
+            overflow-y: auto; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            max-width: 100%; 
+            max-height: 100%;
+            object-fit: fill;
+        }
+
+        .footerbottom {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            left: 25%;
+            width: 50%;
+            height: 8%;  
+            justify-content: center;
+            text-align: center;
+            line-height: 2;
+            font-size: 2.4vh;
+            font-family: 'Prompt', sans-serif;
+            color: rgb(216, 213, 213);
+        }
+
+        .footerbottommobile {
+          position: fixed;
+          padding: 10px 10px 0px 10px;
+          bottom: 0;
+          left: 25%;
+          width: 50%;
+          height: 25px;  
+          justify-content: center;
+          text-align: center;
+          line-height: 2;
+          font-size: 3vh;
+          font-family: 'Prompt', sans-serif;
+          color: rgb(216, 213, 213);
+        }
+      
+        .footerbottommobile:hover {
+            color: rgb(97, 93, 153);
+        }
+
+        .footerbottom:hover {
+            color: rgb(97, 93, 153);
+        }
+      
+    </style>
+</head>
+<body class="scrollable">
+    <header>
+        <h1 class="has-text-white title is-3">my personal blog / topic discussion / images </h1>
+        <p> </p>
+        <h2 class="has-text-white subtitle is-4">just whatever i feel like sharing, could be about projects / could just be about my life</p>
+        <p> </p>
+        <h2 class="has-text-white subtitle is-5">disclaimer: some stuff in this blog are meant to stay in this blog, mostly due to the fact that some of this i wouldn't really ever talk about on main (and since its more irl stuff too), so just as a quick note.</p>
+        <p> </p>
+        <p> </p>
+        <h2 class="has-text-white subtitle is-5">take everything i say as satire / as a joke unless i state that i am not joking</h2>
+        <p> </p>
+    </header>
+
+    <div class="topics-container">
+        <div class="topic" onclick="showFrame('rules')">things to know about what i write here</div>
+        <!- RULES TOPIC SHOULD ALWAYS BE ON TOP, WRITE ANY NEW ONES BELOW THIS LINE. ->
+      
+    </div>
+
+    <div class="frame" id="frame">
+        <button class="close-button" onclick="hideFrame()"><bold>Close</bold></button>
+
+        <div class="frame-content" id="rulesframe" style="display: none;">
+            <p></p>
+            <h1 class="has-text-white title is-2">things to know about what i write here.</h1>
+            <p> </p>
+            <h2 class="subtitle has-text-white is-4"> <br> just for knowledge heres some stuff to know about what i write here <br> <br> ill try to be joking most of the time but there will be some points where i'll become <b>serious about issues regarding stuff</b> <br> <br> whether it's revolving me or not. <br><br><br> also as i state on the main page of the blog, i <b> don't usually want my blogs posted outside of here</b> just for the sake of the way i talk here. <br> <br> another thing i'll put here is that, <b>i'm fine and doing alright</b>, dont think that my blog posts regarding my mental health mean like that i am very depressed or anything <br> <br> <b>i just feel the need to be honest sometimes</b>, doesn't mean im hurt or anything bad like that, i assure you. <br> <br> <br> okay thanks 4 reading through this. (there's a close button in the corner)</h2>
+        </div>
+    </div>
+
+    <script>
+
+        function showFrame(topic) {
+            const frame = document.getElementById('frame');
+            const allFrameContents = document.querySelectorAll('.frame-content');
+
+            allFrameContents.forEach(content => {
+                content.style.display = 'none';
+            });
+
+            const frameContent = document.getElementById(topic + 'frame');
+
+            frameContent.style.display = 'block';
+
+            frame.style.display = 'block';
+
+        }
+
+        function hideFrame() {
+            const frame = document.getElementById('frame');
+            frame.style.display = 'none';
+        }
+
+    </script>
+    <script>
+      function adjustStylesBasedOnScreenWidth() {
+            const screenWidth = window.innerWidth;
+            const frames = document.querySelectorAll('.frame-content')
+            const footer = document.querySelectorAll('.footerbottom');
+            const elements = document.querySelectorAll(".is-4");
+            const others = document.querySelectorAll(".is-7");
+            const titles = document.querySelectorAll(".is-2");
+            const othertitles = document.querySelectorAll(".is-5");
+
+            if (screenWidth < 768) {
+                for (let i = 0; i < elements.length; i++) {
+                    elements[i].classList.remove("is-4");
+                    elements[i].classList.add("is-7");
+                }
+                for (let i = 0; i < titles.length; i++) {
+                    titles[i].classList.remove("is-2");
+                    titles[i].classList.add("is-5");
+                }
+                footer.forEach(title => {
+                    title.style.fontSize = '11px';
+                });
+            }
+        }
+
+        adjustStylesBasedOnScreenWidth();
+
+        window.addEventListener('resize', adjustStylesBasedOnScreenWidth);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
