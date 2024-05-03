@@ -1,7 +1,12 @@
-# static version of my full-website
+# static version of an old website
+
+> [!NOTE]
+> this page will be fully revamped as soon as i am not busy, so none of this is final;
+> also once i find a server-host i can stick to, this repro will be **deleted**
 
 this is a static-version of my actual full-website as i cannot find a sustainable host for the server, so i'm gonna use static pages instead:
 
 any personal info / credentials have been removed.
 
-once i find a host, this repro will most likely be taken down, feel free to look through the files and html if you'd like.
+feel free to look through the files and html if you'd like.
+
