@@ -1,8 +1,8 @@
 const SPOTIFY_API_URL = 'https://api.spotify.com/v1/me/player/currently-playing';
 const RECENTLY_PLAYED_URL = 'https://api.spotify.com/v1/me/player/recently-played?limit=1';
 const CLIENT_ID = 'e0b6c49d7f49401593932b51dc4cbe6b'; 
-const REDIRECT_URI = 'https://sipbuu.club/spotify'; 
-const REDIRECT_URIL = 'https://sipbuu.club/spotify'; 
+const REDIRECT_URI = 'https://sipbuu.club/lastfm'; 
+const REDIRECT_URIL = 'https://sipbuu.club/lastfm'; 
 
 let accessToken = getStoredAccessToken();
 let intervalId;
